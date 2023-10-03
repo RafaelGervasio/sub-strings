@@ -24,7 +24,6 @@ def substrings (word, dictionary)
 end
 
 def find_subs (word, index=0, target=0)
-
     if word.empty?
         return
     end
@@ -42,5 +41,5 @@ def find_subs (word, index=0, target=0)
     end
 end
 
-list = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-substrings("Howdy partner, sit down! How's it going?", list)
+# list = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+# substrings("Howdy partner, sit down! How's it going?", list)
