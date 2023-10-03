@@ -1,6 +1,10 @@
 $substrings_list = []
 
 def substrings (word, dictionary)
+    dictionary = dictionary.map {|str| str.downcase}
+    word = word.downcase
+
+    
     $size = word.length
     hash = {}
 
@@ -48,4 +52,4 @@ end
 
 
 list = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-substrings('below', list)
+substrings("Howdy partner, sit down! How's it going?", list)
