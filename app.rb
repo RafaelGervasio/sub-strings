@@ -3,16 +3,8 @@ $substrings_list = []
 def substrings (word, dictionary)
     dictionary = dictionary.map {|str| str.downcase}
     word = word.downcase
-
-    
     $size = word.length
     hash = {}
-
-
-    #Find all substrings
-    #Check in dict
-    #If matches, append to hash
-    #Return hash
 
     find_subs(word)
 
@@ -28,12 +20,12 @@ def substrings (word, dictionary)
         end
     end
 
-    p hash
+    return hash
 end
 
 def find_subs (word, index=0, target=0)
 
-    if word == ''
+    if word.empty?
         return
     end
     
@@ -49,7 +41,6 @@ def find_subs (word, index=0, target=0)
         return
     end
 end
-
 
 list = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 substrings("Howdy partner, sit down! How's it going?", list)
